@@ -53,7 +53,7 @@ class HomeScreen extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.symmetric(horizontal: 20),
       child: Text(
-        'Acasa',
+        'Home',
         style: TextStyle(
           color: Colors.white,
           fontSize: 28,
@@ -72,22 +72,22 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         children: const [
           _SpendingCard(
-            title: 'Cheltuieli in\nAugust',
-            amount: '8.339,42 RON',
-            subtitle: '3.500 RON ramas',
+            title: 'Spending in\nAugust',
+            amount: '8,339.42 RON',
+            subtitle: '3,500 RON remaining',
             hasCheck: true,
             icon: Icons.bar_chart,
           ),
           SizedBox(width: 10),
           _SpendingCard(
-            title: 'Locuinta',
-            amount: '1.622,04 RON',
+            title: 'Housing',
+            amount: '1,622.04 RON',
             icon: Icons.home_outlined,
           ),
           SizedBox(width: 10),
           _SpendingCard(
-            title: 'Alimentatie si\nservire',
-            amount: '2.486,93 RON',
+            title: 'Food &\nDining',
+            amount: '2,486.93 RON',
             icon: Icons.restaurant_outlined,
           ),
         ],
@@ -117,7 +117,7 @@ class HomeScreen extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.fromLTRB(20, 20, 20, 12),
                 child: Text(
-                  'Produsele tale',
+                  'Your products',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -127,10 +127,10 @@ class HomeScreen extends StatelessWidget {
               ),
               const _ProductCard(
                 topBorderColor: Color(0xFFEB4C79),
-                title: 'Cont de salariu',
-                amount: '14.860,92 RON',
-                subtitle: '10.000,00 RON descoperit de cont',
-                actionLabel: 'Transfer nou',
+                title: 'Salary account',
+                amount: '14,860.92 RON',
+                subtitle: '10,000.00 RON overdraft available',
+                actionLabel: 'New transfer',
                 icon: Icons.account_balance_wallet_outlined,
                 iconBgColor: Color(0xFFFFE8F0),
                 iconColor: Color(0xFFEB4C79),
@@ -138,9 +138,9 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 10),
               _ProductCard(
                 topBorderColor: const Color(0xFF245375),
-                title: 'Economii familie',
-                amount: '12.654,00 RON',
-                actionLabel: 'Transfer intern',
+                title: 'Family savings',
+                amount: '12,654.00 RON',
+                actionLabel: 'Internal transfer',
                 customAvatar: CircleAvatar(
                   radius: 22,
                   backgroundImage: NetworkImage(
@@ -424,7 +424,7 @@ class _CreditCardProduct extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Card de credit',
+                            'Credit card',
                             style: TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.w600,
@@ -433,7 +433,7 @@ class _CreditCardProduct extends StatelessWidget {
                           ),
                           SizedBox(height: 4),
                           Text(
-                            '2.960,85 RON',
+                            '2,960.85 RON',
                             style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.w700,
@@ -490,11 +490,11 @@ class _CreditCardProduct extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  '254,34 RON total datorat',
+                  '254.34 RON total owed',
                   style: TextStyle(fontSize: 12, color: Color(0xFF757575)),
                 ),
                 const Text(
-                  'Scandent pe 25.08.2025',
+                  'Due on 25.08.2025',
                   style: TextStyle(fontSize: 12, color: Color(0xFF757575)),
                 ),
               ],
